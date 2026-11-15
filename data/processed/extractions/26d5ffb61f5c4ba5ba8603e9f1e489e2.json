@@ -1,0 +1,34 @@
+{
+  "id": "26d5ffb61f5c4ba5ba8603e9f1e489e2",
+  "file": "lab_report.png",
+  "image_type": "lab_report",
+  "ocr_text": "CITY CARE DIAGNOSTIC LAB\nPatient ID: PO0123 Date: 2026-10-14\nCOMPLETE BLOOD COUNT\nTest Result Unit Reference Range Flag\nHemoglobin 9.8 gldL 12.0 16.0 Low\nWBC Count 11500 luL 4000 11000 High\nPlatelets 250000 luL 150000 450000 Normal\nFasting Glucose 92 mgldL 70 100 Normal\nPathologist remarks: Mild anemia noted: Advised to consult physician:",
+  "ocr_confidence": 0.844,
+  "line_count": 9,
+  "vision_caption": null,
+  "medicines": [],
+  "diagnoses": [
+    "Mild anemia noted"
+  ],
+  "dates": [
+    "2026-10-14"
+  ],
+  "observations": [
+    "Hemoglobin 9.8 g/dL 12.0 16.0 Low",
+    "WBC Count 11500 \u00b5L 4000 11000 High",
+    "Platelets 250000 \u00b5L 150000 450000 Normal",
+    "Fasting Glucose 92 mg/dL 70 100 Normal"
+  ],
+  "doctor_instructions": [
+    "Advised to consult physician"
+  ],
+  "warnings": [],
+  "has_evidence": true,
+  "timings": {
+    "ocr": 17.84,
+    "vision": 0.0,
+    "llm": 4.96,
+    "total": 22.82
+  },
+  "summary": "Document type: Lab report\nDiagnoses: Mild anemia noted\nDates: 2026-10-14\nObservations:\n  - Hemoglobin 9.8 g/dL 12.0 16.0 Low\n  - WBC Count 11500 \u00b5L 4000 11000 High\n  - Platelets 250000 \u00b5L 150000 450000 Normal\n  - Fasting Glucose 92 mg/dL 70 100 Normal\nInstructions written by the doctor (not our own advice):\n  - Advised to consult physician\nThis was read automatically from the image. Please check it against the original."
+}

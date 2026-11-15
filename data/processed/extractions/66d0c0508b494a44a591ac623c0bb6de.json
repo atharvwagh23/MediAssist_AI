@@ -1,0 +1,51 @@
+{
+  "id": "66d0c0508b494a44a591ac623c0bb6de",
+  "file": "prescription.png",
+  "image_type": "prescription",
+  "ocr_text": "CITY CARE HOSPITAL\nDr. A. Sharma, MD (Medicine) Ph: [PHONE]\nDate: 2026-10-12 Patient: Ravi Kumar; 45 / M\nDiagnosis: Viral fever with throat infection\nRx\n1. Tab Paracetamol 500 mg 1 tablet TDS 5 days\n2. Tab Azithromycin 250 mg tablet OD - 3 days\n3. Syp Cough Relief 10 ml BD - 5 days\nAdvice: Drink plenty of fluids. Take after food.\nReview after 5 days:",
+  "ocr_confidence": 0.857,
+  "line_count": 10,
+  "vision_caption": null,
+  "medicines": [
+    {
+      "name": "Paracetamol",
+      "dosage": "500 mg 1 tablet",
+      "frequency": "TDS",
+      "frequency_plain": "three times a day"
+    },
+    {
+      "name": "Azithromycin",
+      "dosage": "250 mg tablet",
+      "frequency": "OD",
+      "frequency_plain": "once a day"
+    },
+    {
+      "name": "Cough Relief",
+      "dosage": "10 ml",
+      "frequency": "BD",
+      "frequency_plain": "twice a day"
+    }
+  ],
+  "diagnoses": [
+    "Viral fever with throat infection"
+  ],
+  "dates": [
+    "2026-10-12"
+  ],
+  "observations": [],
+  "doctor_instructions": [
+    "Drink plenty of fluids. Take after food.",
+    "Review after 5 days"
+  ],
+  "warnings": [
+    "Personal details (PHONE) were hidden."
+  ],
+  "has_evidence": true,
+  "timings": {
+    "ocr": 14.63,
+    "vision": 0.0,
+    "llm": 6.02,
+    "total": 20.67
+  },
+  "summary": "Document type: Prescription\nMedicines (as written):\n  1. Paracetamol - 500 mg 1 tablet - TDS (three times a day)\n  2. Azithromycin - 250 mg tablet - OD (once a day)\n  3. Cough Relief - 10 ml - BD (twice a day)\nDiagnoses: Viral fever with throat infection\nDates: 2026-10-12\nInstructions written by the doctor (not our own advice):\n  - Drink plenty of fluids. Take after food.\n  - Review after 5 days\nThis was read automatically from the image. Please check it against the original."
+}
