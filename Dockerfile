@@ -5,7 +5,7 @@ ENV PYTHONUNBUFFERED=1 \
     PYTHONDONTWRITEBYTECODE=1 \
     PIP_NO_CACHE_DIR=1 \
     HF_HOME=/app/.cache/huggingface \
-    PORT=8501
+    PORT=7860
 
 WORKDIR /app
 
@@ -13,7 +13,7 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends libglib2.0-0 libgl1 \
     && rm -rf /var/lib/apt/lists/*
 
-# CPU-only PyTorch + matching torchvision (they must be installed together, same version family)
+# CPU-only PyTorch + matching torchvision (installed together so versions match)
 RUN pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
 
 # install the rest of the dependencies straight from pyproject.toml
@@ -23,10 +23,11 @@ RUN python -c "import tomllib; d=tomllib.load(open('pyproject.toml','rb'))['proj
 
 COPY . .
 
-# bake the models and the knowledge-base index into the image: no slow first request, no download at runtime
+# bake the models and the knowledge-base index into the image
 RUN python -c "import easyocr; easyocr.Reader(['en'], gpu=False)" \
     && python -m app.rag.ingest
 
-RUN chmod +x start.sh
-EXPOSE 8501
+# Hugging Face runs the container as a non-root user: let it write users.json and uploads
+RUN chmod -R a+rwX /app && chmod +x start.sh
+EXPOSE 7860
 CMD ["./start.sh"]

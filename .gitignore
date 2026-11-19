@@ -3,4 +3,5 @@
 __pycache__/
 data/vector_store/
 data/processed/users.json
-uploads/
+uploads/data/images/
+data/processed/extractions/

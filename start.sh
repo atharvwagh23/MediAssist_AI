@@ -1,6 +1,5 @@
 #!/bin/sh
-# Backend stays private on localhost:8000. Streamlit listens on the port Render gives us.
-set -e
+# Backend stays private on localhost:8000. Streamlit listens on the port Render gives us.# Backend stays private on localhost:8000. Streamlit listens on $PORT (7860 on Hugging Face).set -e
 export BACKEND_URL="http://localhost:8000"
 
 uvicorn backend.main:app --host 127.0.0.1 --port 8000 &
