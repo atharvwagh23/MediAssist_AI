@@ -1,0 +1,12 @@
+services:
+  mediassist:
+    build: .
+    ports:
+      - "7860:7860"
+    env_file:
+      - .env
+    environment:
+      - PORT=7860
+    volumes:
+      - ./data/processed:/app/data/processed   # keeps user accounts between restarts
+    restart: unless-stopped
