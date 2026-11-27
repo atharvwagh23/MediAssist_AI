@@ -1,7 +1,0 @@
-.env
-.venv/
-__pycache__/
-data/vector_store/
-data/processed/users.json
-uploads/data/images/
-data/processed/extractions/
